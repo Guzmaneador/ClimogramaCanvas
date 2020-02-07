@@ -12,13 +12,14 @@ import java.awt.Graphics;
 public class MyCanvas extends Canvas{
 //    int[] humedad = {0,0,0,0,0,0,0,0,0,0,0,0};
     int[] humedad = {20,9,100,9,80,9,60,9,40,9,120,9};
-    int[] temperatura = {0,0,0,0,0,0,0,0,0,0,0,0};
+    int[] temperatura = {10,30,40,40,46,32,11,21,23,40,12,19};
 
     public MyCanvas() {
     }
     
     @Override
     public void paint(Graphics g){
+        super.paint(g);
        getPreferredSize();
        g.setColor(Color.GRAY);
        int num=1;
@@ -32,16 +33,18 @@ public class MyCanvas extends Canvas{
             g.fillRect(separacion, this.getHeight()-humedad[i]*3, 30, this.getHeight());
         }
         
-        
+        int xOld=0;int yOld=this.getHeight()-temperatura[0]*6;
         g.setColor(Color.red);
-        g.fillOval(40+11, this.getHeight()-10*6, 5, 5);
+        for (int i = 0,separacion=40; i < temperatura.length; i++,separacion+=50) {
+            g.fillOval(separacion+11, this.getHeight()-temperatura[i]*6, 5, 5);
+            g.drawLine(xOld, yOld,separacion+11, this.getHeight()-temperatura[i]*6);
+            xOld=separacion+11;
+            yOld=this.getHeight()-temperatura[i]*6;
+        }
 //       g.fillRect(88, this.getHeight()-40, 10, this.getHeight());
     }
 
-    @Override
-    public void repaint(){
-        
-    }
+    
     @Override
     public Dimension getPreferredSize(){
         return new Dimension(80, 300);
@@ -50,7 +53,9 @@ public class MyCanvas extends Canvas{
         this.humedad=humedad;
         repaint();                
     }
+
     public void setTemperatura(int[] temperatura){
         this.temperatura=temperatura;
+        repaint();
     }
 }
