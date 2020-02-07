@@ -10,9 +10,9 @@ import java.awt.Graphics;
  * @author Guzman
  */
 public class MyCanvas extends Canvas{
-//    int[] humedad = {0,0,0,0,0,0,0,0,0,0,0,0};
-    int[] humedad = {20,9,100,9,80,9,60,9,40,9,120,9};
-    int[] temperatura = {10,30,40,40,46,32,11,21,23,40,12,19};
+
+    int[] humedad = {105,95,115,94,80,61,59,63,69,109,98,91};
+    int[] temperatura = {24,23,21,18,15,12,11,13,14,16,19,23};
 
     public MyCanvas() {
     }
@@ -36,12 +36,13 @@ public class MyCanvas extends Canvas{
         int xOld=0;int yOld=this.getHeight()-temperatura[0]*6;
         g.setColor(Color.red);
         for (int i = 0,separacion=40; i < temperatura.length; i++,separacion+=50) {
-            g.fillOval(separacion+11, this.getHeight()-temperatura[i]*6, 5, 5);
+
             g.drawLine(xOld, yOld,separacion+11, this.getHeight()-temperatura[i]*6);
             xOld=separacion+11;
             yOld=this.getHeight()-temperatura[i]*6;
         }
-//       g.fillRect(88, this.getHeight()-40, 10, this.getHeight());
+        g.drawLine(xOld, yOld,(40+11)*13, this.getHeight()-temperatura[11]*6);
+
     }
 
     

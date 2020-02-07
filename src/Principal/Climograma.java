@@ -90,6 +90,19 @@ public class Climograma extends javax.swing.JFrame {
         jLabel32 = new javax.swing.JLabel();
         jLabel33 = new javax.swing.JLabel();
         actualizarB = new javax.swing.JButton();
+        tituloTF = new javax.swing.JLabel();
+        jLabel34 = new javax.swing.JLabel();
+        jLabel35 = new javax.swing.JLabel();
+        jLabel36 = new javax.swing.JLabel();
+        jLabel37 = new javax.swing.JLabel();
+        jLabel38 = new javax.swing.JLabel();
+        jLabel39 = new javax.swing.JLabel();
+        jLabel40 = new javax.swing.JLabel();
+        jLabel41 = new javax.swing.JLabel();
+        jLabel42 = new javax.swing.JLabel();
+        jLabel43 = new javax.swing.JLabel();
+        jLabel44 = new javax.swing.JLabel();
+        jLabel45 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -117,49 +130,30 @@ public class Climograma extends javax.swing.JFrame {
 
         jLabel12.setText("Diciembre:");
 
-        HumEn.setText("12");
-
-        HumFe.setText("56");
         HumFe.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 HumFeActionPerformed(evt);
             }
         });
 
-        HumMar.setText("65");
-
-        HumAb.setText("45");
         HumAb.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 HumAbActionPerformed(evt);
             }
         });
 
-        HumMay.setText("45");
-
-        HumJun.setText("63");
-
-        HumJul.setText("120");
-
-        HumAg.setText("65");
-
-        HumSep.setText("40");
-
-        HumOc.setText("100");
         HumOc.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 HumOcActionPerformed(evt);
             }
         });
 
-        HumNo.setText("35");
         HumNo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 HumNoActionPerformed(evt);
             }
         });
 
-        HumDi.setText("125");
         HumDi.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 HumDiActionPerformed(evt);
@@ -170,34 +164,36 @@ public class Climograma extends javax.swing.JFrame {
 
         jLabel14.setText("Temperatura (ºC)");
 
-        TemEn.setText("5");
+        TemAb.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                TemAbActionPerformed(evt);
+            }
+        });
 
-        TemFe.setText("4");
-
-        TemMar.setText("6");
-
-        TemAb.setText("12");
-
-        TemMay.setText("9");
-
-        TemJun.setText("15");
-
-        TemJul.setText("20");
         TemJul.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 TemJulActionPerformed(evt);
             }
         });
 
-        TemAg.setText("25");
+        TemAg.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                TemAgActionPerformed(evt);
+            }
+        });
 
-        TemSe.setText("40");
+        TemSe.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                TemSeActionPerformed(evt);
+            }
+        });
 
-        TemOc.setText("25");
+        TemNo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                TemNoActionPerformed(evt);
+            }
+        });
 
-        TemNo.setText("20");
-
-        TemDi.setText("12");
         TemDi.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 TemDiActionPerformed(evt);
@@ -217,40 +213,58 @@ public class Climograma extends javax.swing.JFrame {
             .addGap(0, 470, Short.MAX_VALUE)
         );
 
+        jLabel23.setForeground(new java.awt.Color(255, 0, 0));
         jLabel23.setText("0");
 
+        jLabel24.setForeground(new java.awt.Color(255, 0, 0));
         jLabel24.setText("10");
 
+        jLabel25.setForeground(new java.awt.Color(255, 0, 0));
         jLabel25.setText("20");
 
+        jLabel15.setForeground(new java.awt.Color(255, 0, 51));
         jLabel15.setText("30");
 
+        jLabel16.setForeground(new java.awt.Color(255, 0, 0));
         jLabel16.setText("40");
 
+        jLabel17.setForeground(new java.awt.Color(255, 0, 0));
         jLabel17.setText("50");
 
+        jLabel18.setForeground(new java.awt.Color(255, 0, 0));
         jLabel18.setText("60");
 
+        jLabel19.setForeground(new java.awt.Color(255, 0, 0));
         jLabel19.setText("70");
 
+        jLabel20.setForeground(new java.awt.Color(255, 0, 0));
         jLabel20.setText("ºC");
 
+        jLabel22.setForeground(new java.awt.Color(0, 0, 255));
         jLabel22.setText("60");
 
+        jLabel26.setForeground(new java.awt.Color(0, 0, 255));
         jLabel26.setText("80");
 
+        jLabel27.setForeground(new java.awt.Color(0, 0, 255));
         jLabel27.setText("100");
 
+        jLabel28.setForeground(new java.awt.Color(0, 0, 255));
         jLabel28.setText("120");
 
+        jLabel29.setForeground(new java.awt.Color(0, 0, 255));
         jLabel29.setText("140");
 
+        jLabel30.setForeground(new java.awt.Color(0, 0, 255));
         jLabel30.setText("20");
 
+        jLabel31.setForeground(new java.awt.Color(0, 0, 255));
         jLabel31.setText("40");
 
+        jLabel32.setForeground(new java.awt.Color(0, 0, 255));
         jLabel32.setText("0");
 
+        jLabel33.setForeground(new java.awt.Color(0, 0, 255));
         jLabel33.setText("mm");
 
         actualizarB.setText("Actualizar Datos Climograma");
@@ -259,6 +273,32 @@ public class Climograma extends javax.swing.JFrame {
                 actualizarBActionPerformed(evt);
             }
         });
+
+        tituloTF.setText("Ejemplo de Climograma de Buenos Aires (Argentina)");
+
+        jLabel34.setText("ENE");
+
+        jLabel35.setText("FEB");
+
+        jLabel36.setText("MAR");
+
+        jLabel37.setText("ABR");
+
+        jLabel38.setText("MAY");
+
+        jLabel39.setText("JUN");
+
+        jLabel40.setText("JUL");
+
+        jLabel41.setText("AGO");
+
+        jLabel42.setText("SEP");
+
+        jLabel43.setText("OCT");
+
+        jLabel44.setText("NOV");
+
+        jLabel45.setText("DIC");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -282,7 +322,11 @@ public class Climograma extends javax.swing.JFrame {
                             .addComponent(jLabel18)
                             .addComponent(jLabel19))
                         .addGap(18, 18, 18)))
-                .addComponent(canvasPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(canvasPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(160, 160, 160)
+                        .addComponent(tituloTF, javax.swing.GroupLayout.PREFERRED_SIZE, 415, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
@@ -354,137 +398,185 @@ public class Climograma extends javax.swing.JFrame {
                             .addComponent(TemFe, javax.swing.GroupLayout.Alignment.TRAILING))))
                 .addGap(41, 41, 41))
             .addGroup(layout.createSequentialGroup()
-                .addGap(588, 588, 588)
-                .addComponent(jLabel21)
-                .addGap(0, 0, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
+                .addGap(137, 137, 137)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jLabel34)
+                        .addGap(28, 28, 28)
+                        .addComponent(jLabel35)
+                        .addGap(28, 28, 28)
+                        .addComponent(jLabel36)
+                        .addGap(26, 26, 26)
+                        .addComponent(jLabel37)
+                        .addGap(26, 26, 26)
+                        .addComponent(jLabel38)
+                        .addGap(30, 30, 30)
+                        .addComponent(jLabel39)
+                        .addGap(26, 26, 26)
+                        .addComponent(jLabel40)
+                        .addGap(27, 27, 27)
+                        .addComponent(jLabel41)
+                        .addGap(18, 18, 18))
+                    .addComponent(jLabel21))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel42)
+                .addGap(26, 26, 26)
+                .addComponent(jLabel43)
+                .addGap(26, 26, 26)
+                .addComponent(jLabel44)
+                .addGap(30, 30, 30)
+                .addComponent(jLabel45)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(actualizarB)
                 .addGap(92, 92, 92))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(30, 30, 30)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel20)
-                        .addGap(50, 50, 50)
-                        .addComponent(jLabel19)
-                        .addGap(44, 44, 44)
-                        .addComponent(jLabel18)
-                        .addGap(44, 44, 44)
-                        .addComponent(jLabel17)
-                        .addGap(46, 46, 46)
-                        .addComponent(jLabel16)
-                        .addGap(44, 44, 44)
-                        .addComponent(jLabel15)
-                        .addGap(43, 43, 43)
-                        .addComponent(jLabel25)
-                        .addGap(48, 48, 48)
-                        .addComponent(jLabel24)
-                        .addGap(41, 41, 41)
-                        .addComponent(jLabel23))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel13)
-                            .addComponent(jLabel14)
-                            .addComponent(jLabel33))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(canvasPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(TemEn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(TemFe, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(TemMar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(TemAb, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(TemMay, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(TemJun, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(TemJul, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(TemAg, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(TemSe, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(TemOc, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(TemNo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(TemDi, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addGroup(layout.createSequentialGroup()
-                                    .addComponent(jLabel29)
-                                    .addGap(44, 44, 44)
-                                    .addComponent(jLabel28)
-                                    .addGap(43, 43, 43)
-                                    .addComponent(jLabel27)
-                                    .addGap(46, 46, 46)
-                                    .addComponent(jLabel26)
-                                    .addGap(44, 44, 44)
-                                    .addComponent(jLabel22)
-                                    .addGap(43, 43, 43)
-                                    .addComponent(jLabel31)
-                                    .addGap(48, 48, 48)
-                                    .addComponent(jLabel30)
-                                    .addGap(41, 41, 41)
-                                    .addComponent(jLabel32))
-                                .addGroup(layout.createSequentialGroup()
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                        .addComponent(jLabel1)
-                                        .addComponent(HumEn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGap(18, 18, 18)
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                        .addComponent(jLabel2)
-                                        .addComponent(HumFe, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGap(18, 18, 18)
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                        .addComponent(jLabel3)
-                                        .addComponent(HumMar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGap(18, 18, 18)
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                        .addComponent(jLabel4)
-                                        .addComponent(HumAb, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGap(18, 18, 18)
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                        .addComponent(jLabel5)
-                                        .addComponent(HumMay, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGap(18, 18, 18)
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                        .addComponent(jLabel6)
-                                        .addComponent(HumJun, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGap(18, 18, 18)
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                        .addComponent(jLabel7)
-                                        .addComponent(HumJul, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGap(18, 18, 18)
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                        .addComponent(jLabel8)
-                                        .addComponent(HumAg, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGap(13, 13, 13)
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                        .addComponent(jLabel9)
-                                        .addComponent(HumSep, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGap(17, 17, 17)
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                        .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 15, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(HumOc, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGap(18, 18, 18)
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                        .addComponent(jLabel11)
-                                        .addComponent(HumNo, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGap(18, 18, 18)
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                        .addComponent(jLabel12)
-                                        .addComponent(HumDi, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)))))))
-                .addGap(18, 18, 18)
-                .addComponent(actualizarB)
-                .addGap(3, 3, 3)
+                                .addGap(30, 30, 30)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(jLabel20)
+                                        .addGap(50, 50, 50)
+                                        .addComponent(jLabel19)
+                                        .addGap(44, 44, 44)
+                                        .addComponent(jLabel18)
+                                        .addGap(44, 44, 44)
+                                        .addComponent(jLabel17)
+                                        .addGap(46, 46, 46)
+                                        .addComponent(jLabel16)
+                                        .addGap(44, 44, 44)
+                                        .addComponent(jLabel15)
+                                        .addGap(43, 43, 43)
+                                        .addComponent(jLabel25)
+                                        .addGap(48, 48, 48)
+                                        .addComponent(jLabel24)
+                                        .addGap(41, 41, 41)
+                                        .addComponent(jLabel23))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                            .addComponent(jLabel13)
+                                            .addComponent(jLabel14)
+                                            .addComponent(jLabel33))
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(canvasPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addGroup(layout.createSequentialGroup()
+                                                .addComponent(TemEn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addGap(18, 18, 18)
+                                                .addComponent(TemFe, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addGap(18, 18, 18)
+                                                .addComponent(TemMar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addGap(18, 18, 18)
+                                                .addComponent(TemAb, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addGap(18, 18, 18)
+                                                .addComponent(TemMay, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addGap(18, 18, 18)
+                                                .addComponent(TemJun, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addGap(18, 18, 18)
+                                                .addComponent(TemJul, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addGap(18, 18, 18)
+                                                .addComponent(TemAg, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                                .addComponent(TemSe, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addGap(18, 18, 18)
+                                                .addComponent(TemOc, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addGap(18, 18, 18)
+                                                .addComponent(TemNo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addGap(18, 18, 18)
+                                                .addComponent(TemDi, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                            .addGroup(layout.createSequentialGroup()
+                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                                    .addComponent(jLabel1)
+                                                    .addComponent(HumEn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                    .addGroup(layout.createSequentialGroup()
+                                                        .addGap(18, 18, 18)
+                                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                                            .addComponent(jLabel2)
+                                                            .addComponent(HumFe, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                        .addGap(18, 18, 18)
+                                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                                            .addComponent(jLabel3)
+                                                            .addComponent(HumMar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                        .addGap(18, 18, 18)
+                                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                                            .addComponent(jLabel4)
+                                                            .addComponent(HumAb, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                        .addGap(18, 18, 18)
+                                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                                            .addComponent(jLabel5)
+                                                            .addComponent(HumMay, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                        .addGap(18, 18, 18)
+                                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                                            .addComponent(jLabel6)
+                                                            .addComponent(HumJun, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                        .addGap(18, 18, 18)
+                                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                                            .addComponent(jLabel7)
+                                                            .addComponent(HumJul, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                        .addGap(18, 18, 18)
+                                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                                            .addComponent(jLabel8)
+                                                            .addComponent(HumAg, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                        .addGap(13, 13, 13)
+                                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                                            .addComponent(jLabel9)
+                                                            .addComponent(HumSep, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                        .addGap(17, 17, 17)
+                                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                                            .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 15, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                            .addComponent(HumOc, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                        .addGap(18, 18, 18)
+                                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                                            .addComponent(jLabel11)
+                                                            .addComponent(HumNo, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                        .addGap(18, 18, 18)
+                                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                                            .addComponent(jLabel12)
+                                                            .addComponent(HumDi, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                                    .addGroup(layout.createSequentialGroup()
+                                                        .addGap(7, 7, 7)
+                                                        .addComponent(jLabel29)
+                                                        .addGap(44, 44, 44)
+                                                        .addComponent(jLabel28)
+                                                        .addGap(43, 43, 43)
+                                                        .addComponent(jLabel27)
+                                                        .addGap(46, 46, 46)
+                                                        .addComponent(jLabel26)
+                                                        .addGap(44, 44, 44)
+                                                        .addComponent(jLabel22)
+                                                        .addGap(43, 43, 43)
+                                                        .addComponent(jLabel31)
+                                                        .addGap(48, 48, 48)
+                                                        .addComponent(jLabel30)
+                                                        .addGap(41, 41, 41)
+                                                        .addComponent(jLabel32))))))))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(39, 39, 39)
+                                .addComponent(tituloTF)))
+                        .addGap(18, 18, 18)
+                        .addComponent(actualizarB)
+                        .addGap(3, 3, 3))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel34)
+                            .addComponent(jLabel35)
+                            .addComponent(jLabel36)
+                            .addComponent(jLabel37)
+                            .addComponent(jLabel38)
+                            .addComponent(jLabel39)
+                            .addComponent(jLabel40)
+                            .addComponent(jLabel41)
+                            .addComponent(jLabel42)
+                            .addComponent(jLabel43)
+                            .addComponent(jLabel44)
+                            .addComponent(jLabel45))
+                        .addGap(29, 29, 29)))
                 .addComponent(jLabel21)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -501,6 +593,7 @@ public class Climograma extends javax.swing.JFrame {
         canvas.setHumedad(humedad);
         recogerTemperatura();
         canvas.setTemperatura(temperatura);
+        tituloTF.setText("Climograma creado con datos otrogados por el usuario.");
         
     }//GEN-LAST:event_actualizarBActionPerformed
 
@@ -527,6 +620,22 @@ public class Climograma extends javax.swing.JFrame {
     private void TemDiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TemDiActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_TemDiActionPerformed
+
+    private void TemAbActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TemAbActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_TemAbActionPerformed
+
+    private void TemAgActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TemAgActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_TemAgActionPerformed
+
+    private void TemSeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TemSeActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_TemSeActionPerformed
+
+    private void TemNoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TemNoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_TemNoActionPerformed
 
     /**
      * @param args the command line arguments
@@ -617,12 +726,25 @@ public class Climograma extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel31;
     private javax.swing.JLabel jLabel32;
     private javax.swing.JLabel jLabel33;
+    private javax.swing.JLabel jLabel34;
+    private javax.swing.JLabel jLabel35;
+    private javax.swing.JLabel jLabel36;
+    private javax.swing.JLabel jLabel37;
+    private javax.swing.JLabel jLabel38;
+    private javax.swing.JLabel jLabel39;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel40;
+    private javax.swing.JLabel jLabel41;
+    private javax.swing.JLabel jLabel42;
+    private javax.swing.JLabel jLabel43;
+    private javax.swing.JLabel jLabel44;
+    private javax.swing.JLabel jLabel45;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
+    private javax.swing.JLabel tituloTF;
     // End of variables declaration//GEN-END:variables
 
     public void recogerHumedad(){
